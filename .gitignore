@@ -1,0 +1,68 @@
+# Rust
+/target/
+**/*.rs.bk
+Cargo.lock
+
+# Solana
+test-ledger/
+.anchor/
+farf/
+
+# Program build artifacts
+*.so
+dist/
+build/
+
+# IDEs and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+debug.log
+*.log
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Documentation
+docs/_build/
+target/doc/
+
+# Solana Program dumps
+dump.txt
+
+# BPF dumps
+*.dump
+
+# Solana local validator
+validator.log
+test-ledger/
+
+# Node modules (if using JavaScript/TypeScript tools)
+node_modules/
+
+# Program keypairs
+*-keypair.json
+*.keypair 
