@@ -1,0 +1,15 @@
+cognitive-complexity-threshold = 20
+type-complexity-threshold = 500
+too-many-arguments-threshold = 10
+doc-valid-idents = ["RPC", "BPF", "CPI", "API", "SOL", "SDK", "ZK"]
+disallowed-methods = []
+disallowed-types = []
+
+# Enable all clippy categories
+warn-on-all-wildcard-imports = true
+
+# Specific lints
+missing-docs-in-private-items = true
+pedantic = true
+nursery = true
+cargo = true 

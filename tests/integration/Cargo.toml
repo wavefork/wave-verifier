@@ -1,0 +1,24 @@
+[package]
+name = "wave-verifier-integration-tests"
+version = "0.1.0"
+edition = "2021"
+description = "Integration tests for Wave Verifier"
+publish = false
+
+[dependencies]
+wave-verifier = { path = "../../programs/wave-verifier", features = ["no-entrypoint"] }
+wave-verifier-sdk = { path = "../../sdk" }
+solana-program = { workspace = true }
+solana-program-test = "1.17"
+solana-sdk = { workspace = true }
+solana-logger = { workspace = true }
+borsh = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+anyhow = { workspace = true }
+tokio = { version = "1.0", features = ["full"] }
+rand = { workspace = true }
+
+[[test]]
+name = "integration"
+path = "src/lib.rs" 
